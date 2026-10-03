@@ -61,7 +61,7 @@ async def fetch_checklist_rows(slug):
         if resp.status_code == 404:
             raise SetlistFetchError(f"SetList has no CSV for '{slug}' (404).")
         resp.raise_for_status()
-        text = resp.text
+        text = resp.text.lstrip("﻿")  # SetList's CSVs are UTF-8 with a BOM
 
     reader = csv.DictReader(io.StringIO(text))
     required = {"card_number", "player", "set"}
