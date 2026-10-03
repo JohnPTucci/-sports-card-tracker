@@ -148,6 +148,7 @@ function filteredCards() {
     if (status === "listed" && !c.listing_count) return false;
     if (status === "sold-data" && !c.sold_count) return false;
     if (status === "unlisted" && (c.listing_count || c.sold_count)) return false;
+    if (status === "not-surfaced" && !(c.print_run_total && c.print_run_remaining)) return false;
     if (q && !`${c.player} ${c.team || ""} ${c.card_number || ""}`.toLowerCase().includes(q)) return false;
     return true;
   });
@@ -166,11 +167,17 @@ function renderChecklist() {
       const sold = c.sold_count
         ? `<span class="sold-cell">${money(c.sold_avg_price)} <small>· ${c.sold_count} sale${c.sold_count > 1 ? "s" : ""}</small></span>`
         : `<span class="sold-off">—</span>`;
+      const pulled = c.print_run_total
+        ? `<span class="pulled-cell" title="Estimate from active listings + sold comps matched to this card; the same physical copy can be listed, sold, then relisted, so treat this as a floor, not an exact count.">
+             ${c.print_run_seen} <small>/ ${c.print_run_total} seen</small>
+             ${c.print_run_remaining ? `<br><small class="pulled-remaining">${c.print_run_remaining} never surfaced</small>` : ""}
+           </span>`
+        : `<span class="pulled-off">—</span>`;
       return `<tr>
         <td class="num">${esc(c.card_number)}</td>
         <td>${esc(c.player)}${c.is_hit ? `<span class="hit-tag">hit</span>` : ""}</td>
         <td>${esc(c.team)}</td><td>${esc(c.subset)}</td><td>${esc(c.print_run)}</td>
-        <td>${asking}</td><td>${sold}</td></tr>`;
+        <td>${pulled}</td><td>${asking}</td><td>${sold}</td></tr>`;
     })
     .join("");
   el("btn-more").hidden = rows.length <= state.shown;

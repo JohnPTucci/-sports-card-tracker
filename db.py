@@ -1,9 +1,21 @@
+import re
 import sqlite3
 import statistics
 from datetime import datetime, timezone
 from contextlib import contextmanager
 
 from config import DB_PATH
+
+PRINT_RUN_RE = re.compile(r"/\s*(\d+)")
+
+
+def parse_print_run(print_run):
+    """Pull the denominator out of a print-run string like '/5', '1/1', or
+    'RPA /10'. Returns None for ungated cards (base, inserts with no run)."""
+    if not print_run:
+        return None
+    m = PRINT_RUN_RE.search(print_run)
+    return int(m.group(1)) if m else None
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS card_sets (
@@ -356,6 +368,19 @@ def checklist_with_status(set_id):
         for c in cards:
             if c["sold_avg_price"] is not None:
                 c["sold_avg_price"] = round(c["sold_avg_price"], 2)
+            run_total = parse_print_run(c["print_run"])
+            c["print_run_total"] = run_total
+            if run_total:
+                # Estimate of distinct copies that have surfaced for sale: current
+                # active listings plus everything ever recorded sold. Not an exact
+                # physical count — the same copy can be listed, sold, then relisted —
+                # but it's the best signal this data supports.
+                seen = (c["listing_count"] or 0) + (c["sold_count"] or 0)
+                c["print_run_seen"] = min(seen, run_total)
+                c["print_run_remaining"] = max(run_total - seen, 0)
+            else:
+                c["print_run_seen"] = None
+                c["print_run_remaining"] = None
         return cards, (fetched_at or None)
 
 
