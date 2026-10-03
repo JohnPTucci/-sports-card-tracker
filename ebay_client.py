@@ -99,6 +99,13 @@ async def search_listings(
                 params["category_ids"] = category_id
 
             resp = await client.get(SEARCH_URL, headers=headers, params=params)
+            if resp.status_code == 400 and offset > 0:
+                # eBay's Browse API sometimes reports a `total` higher than what's
+                # actually retrievable, so a page near the end of that range can
+                # 400 instead of returning an empty page. Only the first page (no
+                # offset yet) should raise on a bad request; a 400 while paging is
+                # just the end of the real result set, not a search failure.
+                break
             resp.raise_for_status()
             payload = resp.json()
 
