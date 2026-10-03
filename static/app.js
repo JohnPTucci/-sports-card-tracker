@@ -24,7 +24,7 @@ async function loadSets(selectId) {
   state.sets = await api("/api/sets");
   const sel = el("set-select");
   if (!state.sets.length) {
-    sel.innerHTML = `<option value="">No sets yet — import a checklist</option>`;
+    sel.innerHTML = `<option value="">No sets yet — add one</option>`;
     showEmpty();
     return;
   }
@@ -73,6 +73,13 @@ async function selectSet(id) {
   el("set-sub").textContent = [s.year, s.sport, `${s.card_count} cards in checklist`, `eBay search: "${s.search_query}"`]
     .filter(Boolean)
     .join(" · ");
+  const attr = el("set-attribution");
+  if (s.checklist_source === "setlist") {
+    attr.innerHTML = `Checklist via <a href="https://setlistcards.com" target="_blank" rel="noopener">SetList</a> (CC BY-NC 4.0)`;
+    attr.hidden = false;
+  } else {
+    attr.hidden = true;
+  }
   await refresh();
 }
 
@@ -267,17 +274,104 @@ el("btn-delete").onclick = async () => {
   await loadSets();
 };
 
-// ---------- checklist import modal ----------
+// ---------- add-a-set modal (browse catalog + manual CSV import) ----------
 
-el("btn-import").onclick = () => { el("i-error").hidden = true; el("modal-backdrop").hidden = false; };
+let catalog = null;
 
-el("import-form").onsubmit = async (e) => {
+el("btn-browse").onclick = async () => {
+  el("c-error").hidden = true;
+  el("i-error").hidden = true;
+  el("browse-modal-backdrop").hidden = false;
+  if (!catalog) {
+    catalog = await api("/api/catalog");
+    const sports = Object.keys(catalog).sort();
+    el("c-sport").innerHTML =
+      `<option value="">Choose…</option>` + sports.map((s) => `<option>${esc(s)}</option>`).join("");
+  }
+};
+
+function resetCascadeFrom(level) {
+  // level: 'manufacturer' | 'year' | 'set' — resets this select and everything after it
+  const order = ["manufacturer", "year", "set"];
+  const start = order.indexOf(level);
+  for (let i = start; i < order.length; i++) {
+    const sel = el(`c-${order[i]}`);
+    sel.disabled = true;
+    sel.innerHTML = `<option value="">Choose ${i === 0 ? "a sport" : order[i - 1]} first</option>`;
+  }
+  el("btn-browse-load").disabled = true;
+}
+
+el("c-sport").addEventListener("change", (e) => {
+  resetCascadeFrom("manufacturer");
+  const sport = e.target.value;
+  if (!sport) return;
+  const mans = Object.keys(catalog[sport]).sort();
+  el("c-manufacturer").disabled = false;
+  el("c-manufacturer").innerHTML =
+    `<option value="">Choose…</option>` + mans.map((m) => `<option>${esc(m)}</option>`).join("");
+});
+
+el("c-manufacturer").addEventListener("change", (e) => {
+  resetCascadeFrom("year");
+  const sport = el("c-sport").value, man = e.target.value;
+  if (!man) return;
+  const years = Object.keys(catalog[sport][man]).sort((a, b) => b - a);
+  el("c-year").disabled = false;
+  el("c-year").innerHTML =
+    `<option value="">Choose…</option>` + years.map((y) => `<option>${esc(y)}</option>`).join("");
+});
+
+el("c-year").addEventListener("change", (e) => {
+  resetCascadeFrom("set");
+  const sport = el("c-sport").value, man = el("c-manufacturer").value, year = e.target.value;
+  if (!year) return;
+  const items = catalog[sport][man][year];
+  el("c-set").disabled = false;
+  el("c-set").innerHTML =
+    `<option value="">Choose…</option>` + items.map((it) => `<option value="${it.slug}">${esc(it.title)}</option>`).join("");
+});
+
+el("c-set").addEventListener("change", (e) => {
+  el("btn-browse-load").disabled = !e.target.value;
+});
+
+el("btn-browse-load").onclick = async () => {
+  const slug = el("c-set").value;
+  if (!slug) return;
+  const btn = el("btn-browse-load");
+  btn.disabled = true;
+  btn.textContent = "Loading…";
+  el("c-error").hidden = true;
+  try {
+    const res = await api(`/api/catalog/${slug}/load`, { method: "POST" });
+    el("browse-modal-backdrop").hidden = true;
+    await loadSets(res.id);
+  } catch (err) {
+    el("c-error").textContent = err.message;
+    el("c-error").hidden = false;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Load set";
+  }
+};
+
+document.querySelectorAll(".modal-tab").forEach((t) => {
+  t.onclick = () => {
+    document.querySelectorAll(".modal-tab").forEach((x) => x.classList.toggle("active", x === t));
+    el("modal-pane-browse").hidden = t.dataset.modalTab !== "browse";
+    el("modal-pane-manual").hidden = t.dataset.modalTab !== "manual";
+  };
+});
+
+el("modal-pane-manual").onsubmit = async (e) => {
   e.preventDefault();
   const btn = el("btn-import-submit");
   btn.disabled = true;
   btn.textContent = "Importing…";
   try {
     const file = el("i-file").files[0];
+    if (!file) throw new Error("Choose a checklist CSV file first.");
     const csv_text = await file.text();
     const res = await api("/api/sets/import", {
       method: "POST",
@@ -289,7 +383,7 @@ el("import-form").onsubmit = async (e) => {
         csv_text,
       }),
     });
-    el("modal-backdrop").hidden = true;
+    el("browse-modal-backdrop").hidden = true;
     e.target.reset();
     await loadSets(res.id);
   } catch (err) {

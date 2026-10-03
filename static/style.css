@@ -35,6 +35,8 @@ b { font-weight: 600; }
   padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 24px; flex-wrap: wrap; }
 .set-header h2 { font-size: 26px; }
 .set-sub { color: var(--ink-soft); margin: 4px 0 0; font-size: 14px; }
+.set-attribution { color: #A79B72; margin: 4px 0 0; font-size: 11.5px; }
+.set-attribution a { color: inherit; }
 .set-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .btn-primary { background: var(--pine-900); color: var(--parchment); border: none; border-radius: var(--radius);
   padding: 10px 16px; font: 600 14px 'Inter', sans-serif; cursor: pointer; }
@@ -117,5 +119,18 @@ table.checklist { width: 100%; border-collapse: collapse; font-size: 14px; }
 .modal-actions { display: flex; justify-content: flex-end; gap: 10px; }
 .form-error { color: var(--rust); font-size: 13px; margin: 0; }
 .form-success { color: var(--sage); font-size: 13px; margin: 0; }
+
+/* add-a-set modal */
+.modal-wide { width: 520px; }
+.modal-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: -4px 0 4px; }
+.modal-tab { background: none; border: none; border-bottom: 2px solid transparent; padding: 8px 4px;
+  font: 600 13.5px 'Inter', sans-serif; color: var(--ink-soft); cursor: pointer; margin-bottom: -1px; }
+.modal-tab.active { color: var(--ink); border-bottom-color: var(--gold); }
+.modal-pane[hidden] { display: none; }
+.cascade { display: flex; flex-direction: column; gap: 12px; }
+.cascade label { font-size: 13px; color: var(--ink-soft); display: flex; flex-direction: column; gap: 5px; }
+.cascade select { font: 14px 'Inter', sans-serif; padding: 9px 10px; border: 1px solid #C9BE9A;
+  border-radius: var(--radius); background: white; color: var(--ink); }
+.cascade select:disabled { background: var(--parchment-dim); color: #A79B72; cursor: not-allowed; }
 
 @media (max-width: 720px) { .main { padding: 20px; } .topbar { padding: 12px 20px; } }

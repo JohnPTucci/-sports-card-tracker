@@ -12,7 +12,9 @@ CREATE TABLE IF NOT EXISTS card_sets (
     year INTEGER,
     sport TEXT,
     search_query TEXT NOT NULL,
-    created_at TEXT NOT NULL
+    created_at TEXT NOT NULL,
+    catalog_slug TEXT,                        -- SetList slug, if auto-loaded from the catalog
+    checklist_source TEXT DEFAULT 'manual'    -- 'setlist' or 'manual'
 );
 
 CREATE TABLE IF NOT EXISTS checklist_cards (
@@ -86,6 +88,12 @@ def get_conn():
 def init_db():
     with get_conn() as conn:
         conn.executescript(SCHEMA)
+        # Migrate existing databases created before catalog_slug/checklist_source existed.
+        existing = {row["name"] for row in conn.execute("PRAGMA table_info(card_sets)")}
+        if "catalog_slug" not in existing:
+            conn.execute("ALTER TABLE card_sets ADD COLUMN catalog_slug TEXT")
+        if "checklist_source" not in existing:
+            conn.execute("ALTER TABLE card_sets ADD COLUMN checklist_source TEXT DEFAULT 'manual'")
 
 
 def now_iso():
@@ -94,13 +102,23 @@ def now_iso():
 
 # ---------- sets ----------
 
-def create_set(name, year, sport, search_query):
+def create_set(name, year, sport, search_query, catalog_slug=None, checklist_source="manual"):
     with get_conn() as conn:
         cur = conn.execute(
-            "INSERT INTO card_sets (name, year, sport, search_query, created_at) VALUES (?, ?, ?, ?, ?)",
-            (name, year, sport, search_query, now_iso()),
+            """INSERT INTO card_sets
+               (name, year, sport, search_query, created_at, catalog_slug, checklist_source)
+               VALUES (?, ?, ?, ?, ?, ?, ?)""",
+            (name, year, sport, search_query, now_iso(), catalog_slug, checklist_source),
         )
         return cur.lastrowid
+
+
+def find_set_by_slug(catalog_slug):
+    with get_conn() as conn:
+        row = conn.execute(
+            "SELECT * FROM card_sets WHERE catalog_slug = ?", (catalog_slug,)
+        ).fetchone()
+        return dict(row) if row else None
 
 
 def set_exists(name):

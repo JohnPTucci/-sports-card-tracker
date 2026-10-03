@@ -1,0 +1,1984 @@
+{
+  "Football": {
+    "Panini": {
+      "2019": [
+        {
+          "slug": "2019-encased-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2019,
+          "year_label": "2019",
+          "title": "Encased",
+          "display_name": "2019 Encased Football"
+        }
+      ],
+      "2020": [
+        {
+          "slug": "2020-playoff-contenders-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2020,
+          "year_label": "2020",
+          "title": "Playoff Contenders",
+          "display_name": "2020 Playoff Contenders Football"
+        }
+      ],
+      "2021": [
+        {
+          "slug": "2021-chronicles-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Chronicles",
+          "display_name": "2021 Chronicles Football"
+        },
+        {
+          "slug": "2021-clearly-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Clearly Donruss",
+          "display_name": "2021 Clearly Donruss Football"
+        },
+        {
+          "slug": "2021-contenders-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Contenders",
+          "display_name": "2021 Contenders Football"
+        },
+        {
+          "slug": "2021-contenders-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Contenders Optic",
+          "display_name": "2021 Contenders Optic Football"
+        },
+        {
+          "slug": "2021-donruss-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Donruss Optic",
+          "display_name": "2021 Donruss Optic Football"
+        },
+        {
+          "slug": "2021-eminence-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Eminence",
+          "display_name": "2021 Eminence Football"
+        },
+        {
+          "slug": "2021-encased-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Encased",
+          "display_name": "2021 Encased Football"
+        },
+        {
+          "slug": "2021-flawless-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Flawless",
+          "display_name": "2021 Flawless Football"
+        },
+        {
+          "slug": "2021-illusions-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Illusions",
+          "display_name": "2021 Illusions Football"
+        },
+        {
+          "slug": "2021-immaculate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Immaculate",
+          "display_name": "2021 Immaculate Football"
+        },
+        {
+          "slug": "2021-impeccable-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Impeccable",
+          "display_name": "2021 Impeccable Football"
+        },
+        {
+          "slug": "2021-limited-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Limited",
+          "display_name": "2021 Limited Football"
+        },
+        {
+          "slug": "2021-mosaic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Mosaic",
+          "display_name": "2021 Mosaic Football"
+        },
+        {
+          "slug": "2021-national-treasures-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "National Treasures",
+          "display_name": "2021 National Treasures Football"
+        },
+        {
+          "slug": "2021-one-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "One",
+          "display_name": "2021 One Football"
+        },
+        {
+          "slug": "2021-phoenix-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Phoenix",
+          "display_name": "2021 Phoenix Football"
+        },
+        {
+          "slug": "2021-playbook-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Playbook",
+          "display_name": "2021 Playbook Football"
+        },
+        {
+          "slug": "2021-prizm-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Prizm",
+          "display_name": "2021 Prizm Football"
+        },
+        {
+          "slug": "2021-rookies-and-stars-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Rookies And Stars",
+          "display_name": "2021 Rookies And Stars Football"
+        },
+        {
+          "slug": "2021-select-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "Select",
+          "display_name": "2021 Select Football"
+        },
+        {
+          "slug": "2021-xr-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2021,
+          "year_label": "2021",
+          "title": "XR",
+          "display_name": "2021 XR Football"
+        }
+      ],
+      "2022": [
+        {
+          "slug": "2022-absolute-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Absolute",
+          "display_name": "2022 Absolute Football"
+        },
+        {
+          "slug": "2022-black-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Black",
+          "display_name": "2022 Black Football"
+        },
+        {
+          "slug": "2022-certified-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Certified",
+          "display_name": "2022 Certified Football"
+        },
+        {
+          "slug": "2022-chronicles-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Chronicles",
+          "display_name": "2022 Chronicles Football"
+        },
+        {
+          "slug": "2022-chronicles-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Chronicles Draft Picks Collegiate",
+          "display_name": "2022 Chronicles Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2022-clearly-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Clearly Donruss",
+          "display_name": "2022 Clearly Donruss Football"
+        },
+        {
+          "slug": "2022-contenders-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Contenders",
+          "display_name": "2022 Contenders Football"
+        },
+        {
+          "slug": "2022-contenders-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Contenders Optic",
+          "display_name": "2022 Contenders Optic Football"
+        },
+        {
+          "slug": "2022-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Donruss",
+          "display_name": "2022 Donruss Football"
+        },
+        {
+          "slug": "2022-donruss-elite-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Donruss Elite",
+          "display_name": "2022 Donruss Elite Football"
+        },
+        {
+          "slug": "2022-elements-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Elements",
+          "display_name": "2022 Elements Football"
+        },
+        {
+          "slug": "2022-encased-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Encased",
+          "display_name": "2022 Encased Football"
+        },
+        {
+          "slug": "2022-flawless-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Flawless",
+          "display_name": "2022 Flawless Football"
+        },
+        {
+          "slug": "2022-flawless-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Flawless Collegiate",
+          "display_name": "2022 Flawless Collegiate Football"
+        },
+        {
+          "slug": "2022-gold-standard-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Gold Standard",
+          "display_name": "2022 Gold Standard Football"
+        },
+        {
+          "slug": "2022-illusions-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Illusions",
+          "display_name": "2022 Illusions Football"
+        },
+        {
+          "slug": "2022-immaculate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Immaculate",
+          "display_name": "2022 Immaculate Football"
+        },
+        {
+          "slug": "2022-immaculate-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Immaculate Collegiate",
+          "display_name": "2022 Immaculate Collegiate Football"
+        },
+        {
+          "slug": "2022-impeccable-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Impeccable",
+          "display_name": "2022 Impeccable Football"
+        },
+        {
+          "slug": "2022-legacy-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Legacy",
+          "display_name": "2022 Legacy Football"
+        },
+        {
+          "slug": "2022-limited-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Limited",
+          "display_name": "2022 Limited Football"
+        },
+        {
+          "slug": "2022-luminance-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Luminance",
+          "display_name": "2022 Luminance Football"
+        },
+        {
+          "slug": "2022-mosaic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Mosaic",
+          "display_name": "2022 Mosaic Football"
+        },
+        {
+          "slug": "2022-national-treasures-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "National Treasures",
+          "display_name": "2022 National Treasures Football"
+        },
+        {
+          "slug": "2022-national-treasures-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "National Treasures Collegiate",
+          "display_name": "2022 National Treasures Collegiate Football"
+        },
+        {
+          "slug": "2022-obsidian-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Obsidian",
+          "display_name": "2022 Obsidian Football"
+        },
+        {
+          "slug": "2022-one-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "One",
+          "display_name": "2022 One Football"
+        },
+        {
+          "slug": "2022-origins-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Origins",
+          "display_name": "2022 Origins Football"
+        },
+        {
+          "slug": "2022-phoenix-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Phoenix",
+          "display_name": "2022 Phoenix Football"
+        },
+        {
+          "slug": "2022-playbook-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Playbook",
+          "display_name": "2022 Playbook Football"
+        },
+        {
+          "slug": "2022-prizm-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Prizm",
+          "display_name": "2022 Prizm Football"
+        },
+        {
+          "slug": "2022-rookies-and-stars-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Rookies And Stars",
+          "display_name": "2022 Rookies And Stars Football"
+        },
+        {
+          "slug": "2022-score-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Score",
+          "display_name": "2022 Score Football"
+        },
+        {
+          "slug": "2022-select-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Select",
+          "display_name": "2022 Select Football"
+        },
+        {
+          "slug": "2022-select-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Select Draft Picks Collegiate",
+          "display_name": "2022 Select Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2022-spectra-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Spectra",
+          "display_name": "2022 Spectra Football"
+        },
+        {
+          "slug": "2022-xr-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "XR",
+          "display_name": "2022 XR Football"
+        },
+        {
+          "slug": "2022-zenith-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2022,
+          "year_label": "2022",
+          "title": "Zenith",
+          "display_name": "2022 Zenith Football"
+        }
+      ],
+      "2023": [
+        {
+          "slug": "2023-absolute-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Absolute",
+          "display_name": "2023 Absolute Football"
+        },
+        {
+          "slug": "2023-black-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Black",
+          "display_name": "2023 Black Football"
+        },
+        {
+          "slug": "2023-certified-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Certified",
+          "display_name": "2023 Certified Football"
+        },
+        {
+          "slug": "2023-chronicles-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Chronicles Draft Picks Collegiate",
+          "display_name": "2023 Chronicles Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2023-clearly-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Clearly Donruss",
+          "display_name": "2023 Clearly Donruss Football"
+        },
+        {
+          "slug": "2023-contenders-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Contenders",
+          "display_name": "2023 Contenders Football"
+        },
+        {
+          "slug": "2023-contenders-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Contenders Optic",
+          "display_name": "2023 Contenders Optic Football"
+        },
+        {
+          "slug": "2023-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Donruss",
+          "display_name": "2023 Donruss Football"
+        },
+        {
+          "slug": "2023-donruss-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Donruss Optic",
+          "display_name": "2023 Donruss Optic Football"
+        },
+        {
+          "slug": "2023-flawless-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Flawless",
+          "display_name": "2023 Flawless Football"
+        },
+        {
+          "slug": "2023-flawless-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Flawless Collegiate",
+          "display_name": "2023 Flawless Collegiate Football"
+        },
+        {
+          "slug": "2023-gold-standard-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Gold Standard",
+          "display_name": "2023 Gold Standard Football"
+        },
+        {
+          "slug": "2023-illusions-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Illusions",
+          "display_name": "2023 Illusions Football"
+        },
+        {
+          "slug": "2023-immaculate-collection-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Immaculate Collection",
+          "display_name": "2023 Immaculate Collection Football"
+        },
+        {
+          "slug": "2023-immaculate-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Immaculate Collegiate",
+          "display_name": "2023 Immaculate Collegiate Football"
+        },
+        {
+          "slug": "2023-impeccable-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Impeccable",
+          "display_name": "2023 Impeccable Football"
+        },
+        {
+          "slug": "2023-legacy-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Legacy",
+          "display_name": "2023 Legacy Football"
+        },
+        {
+          "slug": "2023-limited-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Limited",
+          "display_name": "2023 Limited Football"
+        },
+        {
+          "slug": "2023-luminance-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Luminance",
+          "display_name": "2023 Luminance Football"
+        },
+        {
+          "slug": "2023-mosaic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Mosaic",
+          "display_name": "2023 Mosaic Football"
+        },
+        {
+          "slug": "2023-national-treasures-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "National Treasures",
+          "display_name": "2023 National Treasures Football"
+        },
+        {
+          "slug": "2023-national-treasures-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "National Treasures Collegiate",
+          "display_name": "2023 National Treasures Collegiate Football"
+        },
+        {
+          "slug": "2023-one-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "One",
+          "display_name": "2023 One Football"
+        },
+        {
+          "slug": "2023-origins-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Origins",
+          "display_name": "2023 Origins Football"
+        },
+        {
+          "slug": "2023-phoenix-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Phoenix",
+          "display_name": "2023 Phoenix Football"
+        },
+        {
+          "slug": "2023-plates-and-patches-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Plates And Patches",
+          "display_name": "2023 Plates And Patches Football"
+        },
+        {
+          "slug": "2023-prizm-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Prizm Draft Picks Collegiate",
+          "display_name": "2023 Prizm Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2023-rookies-and-stars-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Rookies And Stars",
+          "display_name": "2023 Rookies And Stars Football"
+        },
+        {
+          "slug": "2023-score-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Score",
+          "display_name": "2023 Score Football"
+        },
+        {
+          "slug": "2023-select-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Select",
+          "display_name": "2023 Select Football"
+        },
+        {
+          "slug": "2023-select-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Select Draft Picks Collegiate",
+          "display_name": "2023 Select Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2023-spectra-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Spectra",
+          "display_name": "2023 Spectra Football"
+        },
+        {
+          "slug": "2023-zenith-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023",
+          "title": "Zenith",
+          "display_name": "2023 Zenith Football"
+        }
+      ],
+      "2024": [
+        {
+          "slug": "2024-absolute-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Absolute",
+          "display_name": "2024 Absolute Football"
+        },
+        {
+          "slug": "2024-black-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Black",
+          "display_name": "2024 Black Football"
+        },
+        {
+          "slug": "2024-certified-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Certified",
+          "display_name": "2024 Certified Football"
+        },
+        {
+          "slug": "2024-clearly-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Clearly Donruss",
+          "display_name": "2024 Clearly Donruss Football"
+        },
+        {
+          "slug": "2024-contenders-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Contenders",
+          "display_name": "2024 Contenders Football"
+        },
+        {
+          "slug": "2024-contenders-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Contenders Optic",
+          "display_name": "2024 Contenders Optic Football"
+        },
+        {
+          "slug": "2024-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Donruss",
+          "display_name": "2024 Donruss Football"
+        },
+        {
+          "slug": "2024-donruss-elite-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Donruss Elite",
+          "display_name": "2024 Donruss Elite Football"
+        },
+        {
+          "slug": "2024-donruss-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Donruss Optic",
+          "display_name": "2024 Donruss Optic Football"
+        },
+        {
+          "slug": "2024-eminence-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Eminence",
+          "display_name": "2024 Eminence Football"
+        },
+        {
+          "slug": "2024-encore-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Encore",
+          "display_name": "2024 Encore Football"
+        },
+        {
+          "slug": "2024-flawless-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Flawless",
+          "display_name": "2024 Flawless Football"
+        },
+        {
+          "slug": "2024-gold-standard-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Gold Standard",
+          "display_name": "2024 Gold Standard Football"
+        },
+        {
+          "slug": "2024-illusions-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Illusions",
+          "display_name": "2024 Illusions Football"
+        },
+        {
+          "slug": "2024-immaculate-collection-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Immaculate Collection",
+          "display_name": "2024 Immaculate Collection Football"
+        },
+        {
+          "slug": "2024-impeccable-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Impeccable",
+          "display_name": "2024 Impeccable Football"
+        },
+        {
+          "slug": "2024-luminance-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Luminance",
+          "display_name": "2024 Luminance Football"
+        },
+        {
+          "slug": "2024-mosaic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Mosaic",
+          "display_name": "2024 Mosaic Football"
+        },
+        {
+          "slug": "2024-national-treasures-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "National Treasures",
+          "display_name": "2024 National Treasures Football"
+        },
+        {
+          "slug": "2024-national-treasures-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "National Treasures Collegiate",
+          "display_name": "2024 National Treasures Collegiate Football"
+        },
+        {
+          "slug": "2024-obsidian-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Obsidian",
+          "display_name": "2024 Obsidian Football"
+        },
+        {
+          "slug": "2024-one-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "One",
+          "display_name": "2024 One Football"
+        },
+        {
+          "slug": "2024-origins-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Origins",
+          "display_name": "2024 Origins Football"
+        },
+        {
+          "slug": "2024-phoenix-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Phoenix",
+          "display_name": "2024 Phoenix Football"
+        },
+        {
+          "slug": "2024-photogenic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Photogenic",
+          "display_name": "2024 Photogenic Football"
+        },
+        {
+          "slug": "2024-prizm-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Prizm",
+          "display_name": "2024 Prizm Football"
+        },
+        {
+          "slug": "2024-prizm-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Prizm Draft Picks Collegiate",
+          "display_name": "2024 Prizm Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2024-rookies-and-stars-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Rookies And Stars",
+          "display_name": "2024 Rookies And Stars Football"
+        },
+        {
+          "slug": "2024-score-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Score",
+          "display_name": "2024 Score Football"
+        },
+        {
+          "slug": "2024-select-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Select",
+          "display_name": "2024 Select Football"
+        },
+        {
+          "slug": "2024-spectra-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Spectra",
+          "display_name": "2024 Spectra Football"
+        },
+        {
+          "slug": "2024-zenith-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024",
+          "title": "Zenith",
+          "display_name": "2024 Zenith Football"
+        }
+      ],
+      "2025": [
+        {
+          "slug": "2025-absolute-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Absolute",
+          "display_name": "2025 Absolute Football"
+        },
+        {
+          "slug": "2025-authentically-mahomes-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Authentically Mahomes",
+          "display_name": "2025 Authentically Mahomes Football"
+        },
+        {
+          "slug": "2025-black-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Black",
+          "display_name": "2025 Black Football"
+        },
+        {
+          "slug": "2025-certified-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Certified",
+          "display_name": "2025 Certified Football"
+        },
+        {
+          "slug": "2025-donruss-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Donruss",
+          "display_name": "2025 Donruss Football"
+        },
+        {
+          "slug": "2025-donruss-elite-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Donruss Elite",
+          "display_name": "2025 Donruss Elite Football"
+        },
+        {
+          "slug": "2025-donruss-optic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Donruss Optic",
+          "display_name": "2025 Donruss Optic Football"
+        },
+        {
+          "slug": "2025-flawless-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Flawless",
+          "display_name": "2025 Flawless Football"
+        },
+        {
+          "slug": "2025-immaculate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Immaculate",
+          "display_name": "2025 Immaculate Football"
+        },
+        {
+          "slug": "2025-impeccable-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Impeccable",
+          "display_name": "2025 Impeccable Football"
+        },
+        {
+          "slug": "2025-luminance-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Luminance",
+          "display_name": "2025 Luminance Football"
+        },
+        {
+          "slug": "2025-mosaic-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Mosaic",
+          "display_name": "2025 Mosaic Football"
+        },
+        {
+          "slug": "2025-national-treasures-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "National Treasures",
+          "display_name": "2025 National Treasures Football"
+        },
+        {
+          "slug": "2025-national-treasures-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "National Treasures Collegiate",
+          "display_name": "2025 National Treasures Collegiate Football"
+        },
+        {
+          "slug": "2025-origins-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Origins",
+          "display_name": "2025 Origins Football"
+        },
+        {
+          "slug": "2025-phoenix-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Phoenix",
+          "display_name": "2025 Phoenix Football"
+        },
+        {
+          "slug": "2025-prizm-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Prizm",
+          "display_name": "2025 Prizm Football"
+        },
+        {
+          "slug": "2025-prizm-black-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Prizm Black",
+          "display_name": "2025 Prizm Black Football"
+        },
+        {
+          "slug": "2025-prizm-draft-picks-collegiate-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Prizm Draft Picks Collegiate",
+          "display_name": "2025 Prizm Draft Picks Collegiate Football"
+        },
+        {
+          "slug": "2025-rookies-and-stars-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Rookies And Stars",
+          "display_name": "2025 Rookies And Stars Football"
+        },
+        {
+          "slug": "2025-score-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Score",
+          "display_name": "2025 Score Football"
+        },
+        {
+          "slug": "2025-select-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Select",
+          "display_name": "2025 Select Football"
+        },
+        {
+          "slug": "2025-silhouette-football",
+          "sport": "Football",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025",
+          "title": "Silhouette",
+          "display_name": "2025 Silhouette Football"
+        }
+      ]
+    },
+    "Topps": {
+      "2026": [
+        {
+          "slug": "2026-topps-football",
+          "sport": "Football",
+          "manufacturer": "Topps",
+          "year": 2026,
+          "year_label": "2026",
+          "title": "Topps",
+          "display_name": "2026 Topps Football"
+        }
+      ]
+    }
+  },
+  "Basketball": {
+    "Panini": {
+      "2023": [
+        {
+          "slug": "2023-24-contenders-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Contenders",
+          "display_name": "2023-24 Contenders Basketball"
+        },
+        {
+          "slug": "2023-24-contenders-optic-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Contenders Optic",
+          "display_name": "2023-24 Contenders Optic Basketball"
+        },
+        {
+          "slug": "2023-24-court-kings-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Court Kings",
+          "display_name": "2023-24 Court Kings Basketball"
+        },
+        {
+          "slug": "2023-24-crown-royale-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Crown Royale",
+          "display_name": "2023-24 Crown Royale Basketball"
+        },
+        {
+          "slug": "2023-24-crown-royale-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Crown Royale Euroleague",
+          "display_name": "2023-24 Crown Royale Euroleague Basketball"
+        },
+        {
+          "slug": "2023-24-donruss-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Donruss",
+          "display_name": "2023-24 Donruss Basketball"
+        },
+        {
+          "slug": "2023-24-donruss-elite-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Donruss Elite",
+          "display_name": "2023-24 Donruss Elite Basketball"
+        },
+        {
+          "slug": "2023-24-donruss-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Donruss Euroleague",
+          "display_name": "2023-24 Donruss Euroleague Basketball"
+        },
+        {
+          "slug": "2023-24-donruss-optic-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Donruss Optic",
+          "display_name": "2023-24 Donruss Optic Basketball"
+        },
+        {
+          "slug": "2023-24-flawless-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Flawless",
+          "display_name": "2023-24 Flawless Basketball"
+        },
+        {
+          "slug": "2023-24-hoops-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Hoops",
+          "display_name": "2023-24 Hoops Basketball"
+        },
+        {
+          "slug": "2023-24-immaculate-collection-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Immaculate Collection",
+          "display_name": "2023-24 Immaculate Collection Basketball"
+        },
+        {
+          "slug": "2023-24-impeccable-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Impeccable",
+          "display_name": "2023-24 Impeccable Basketball"
+        },
+        {
+          "slug": "2023-24-mosaic-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Mosaic",
+          "display_name": "2023-24 Mosaic Basketball"
+        },
+        {
+          "slug": "2023-24-noir-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Noir",
+          "display_name": "2023-24 Noir Basketball"
+        },
+        {
+          "slug": "2023-24-obsidian-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Obsidian",
+          "display_name": "2023-24 Obsidian Basketball"
+        },
+        {
+          "slug": "2023-24-one-and-one-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "One And One",
+          "display_name": "2023-24 One And One Basketball"
+        },
+        {
+          "slug": "2023-24-origins-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Origins",
+          "display_name": "2023-24 Origins Basketball"
+        },
+        {
+          "slug": "2023-24-origins-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Origins WNBA",
+          "display_name": "2023-24 Origins WNBA Basketball"
+        },
+        {
+          "slug": "2023-24-phoenix-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Phoenix",
+          "display_name": "2023-24 Phoenix Basketball"
+        },
+        {
+          "slug": "2023-24-prizm-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Prizm",
+          "display_name": "2023-24 Prizm Basketball"
+        },
+        {
+          "slug": "2023-24-prizm-draft-picks-collegiate-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Prizm Draft Picks Collegiate",
+          "display_name": "2023-24 Prizm Draft Picks Collegiate Basketball"
+        },
+        {
+          "slug": "2023-24-prizm-turkish-airlines-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Prizm Turkish Airlines Euroleague",
+          "display_name": "2023-24 Prizm Turkish Airlines Euroleague Basketball"
+        },
+        {
+          "slug": "2023-24-prizm-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Prizm WNBA",
+          "display_name": "2023-24 Prizm WNBA Basketball"
+        },
+        {
+          "slug": "2023-24-recon-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Recon",
+          "display_name": "2023-24 Recon Basketball"
+        },
+        {
+          "slug": "2023-24-revolution-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Revolution",
+          "display_name": "2023-24 Revolution Basketball"
+        },
+        {
+          "slug": "2023-24-select-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Select",
+          "display_name": "2023-24 Select Basketball"
+        },
+        {
+          "slug": "2023-24-spectra-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2023,
+          "year_label": "2023-24",
+          "title": "Spectra",
+          "display_name": "2023-24 Spectra Basketball"
+        }
+      ],
+      "2024": [
+        {
+          "slug": "2024-25-court-kings-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Court Kings",
+          "display_name": "2024-25 Court Kings Basketball"
+        },
+        {
+          "slug": "2024-25-crown-royale-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Crown Royale Euroleague",
+          "display_name": "2024-25 Crown Royale Euroleague Basketball"
+        },
+        {
+          "slug": "2024-25-donruss-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Donruss",
+          "display_name": "2024-25 Donruss Basketball"
+        },
+        {
+          "slug": "2024-25-donruss-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Donruss Euroleague",
+          "display_name": "2024-25 Donruss Euroleague Basketball"
+        },
+        {
+          "slug": "2024-25-donruss-optic-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Donruss Optic",
+          "display_name": "2024-25 Donruss Optic Basketball"
+        },
+        {
+          "slug": "2024-25-eminence-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Eminence",
+          "display_name": "2024-25 Eminence Basketball"
+        },
+        {
+          "slug": "2024-25-flawless-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Flawless",
+          "display_name": "2024-25 Flawless Basketball"
+        },
+        {
+          "slug": "2024-25-hoops-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Hoops",
+          "display_name": "2024-25 Hoops Basketball"
+        },
+        {
+          "slug": "2024-25-immaculate-collection-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Immaculate Collection",
+          "display_name": "2024-25 Immaculate Collection Basketball"
+        },
+        {
+          "slug": "2024-25-mosaic-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Mosaic",
+          "display_name": "2024-25 Mosaic Basketball"
+        },
+        {
+          "slug": "2024-25-national-treasures-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "National Treasures",
+          "display_name": "2024-25 National Treasures Basketball"
+        },
+        {
+          "slug": "2024-25-noir-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Noir",
+          "display_name": "2024-25 Noir Basketball"
+        },
+        {
+          "slug": "2024-25-obsidian-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Obsidian",
+          "display_name": "2024-25 Obsidian Basketball"
+        },
+        {
+          "slug": "2024-25-one-and-one-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "One And One",
+          "display_name": "2024-25 One And One Basketball"
+        },
+        {
+          "slug": "2024-25-origins-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Origins",
+          "display_name": "2024-25 Origins Basketball"
+        },
+        {
+          "slug": "2024-25-origins-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Origins WNBA",
+          "display_name": "2024-25 Origins WNBA Basketball"
+        },
+        {
+          "slug": "2024-25-prizm-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Prizm",
+          "display_name": "2024-25 Prizm Basketball"
+        },
+        {
+          "slug": "2024-25-prizm-black-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Prizm Black",
+          "display_name": "2024-25 Prizm Black Basketball"
+        },
+        {
+          "slug": "2024-25-prizm-draft-picks-collegiate-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Prizm Draft Picks Collegiate",
+          "display_name": "2024-25 Prizm Draft Picks Collegiate Basketball"
+        },
+        {
+          "slug": "2024-25-prizm-turkish-airlines-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Prizm Turkish Airlines Euroleague",
+          "display_name": "2024-25 Prizm Turkish Airlines Euroleague Basketball"
+        },
+        {
+          "slug": "2024-25-prizm-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Prizm WNBA",
+          "display_name": "2024-25 Prizm WNBA Basketball"
+        },
+        {
+          "slug": "2024-25-revolution-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Revolution",
+          "display_name": "2024-25 Revolution Basketball"
+        },
+        {
+          "slug": "2024-25-select-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Select",
+          "display_name": "2024-25 Select Basketball"
+        },
+        {
+          "slug": "2024-25-select-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Select WNBA",
+          "display_name": "2024-25 Select WNBA Basketball"
+        },
+        {
+          "slug": "2024-25-silhouette-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2024,
+          "year_label": "2024-25",
+          "title": "Silhouette",
+          "display_name": "2024-25 Silhouette Basketball"
+        }
+      ],
+      "2025": [
+        {
+          "slug": "2025-26-contenders-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Contenders Euroleague",
+          "display_name": "2025-26 Contenders Euroleague Basketball"
+        },
+        {
+          "slug": "2025-26-court-kings-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Court Kings",
+          "display_name": "2025-26 Court Kings Basketball"
+        },
+        {
+          "slug": "2025-26-donruss-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Donruss",
+          "display_name": "2025-26 Donruss Basketball"
+        },
+        {
+          "slug": "2025-26-donruss-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Donruss WNBA",
+          "display_name": "2025-26 Donruss WNBA Basketball"
+        },
+        {
+          "slug": "2025-26-impeccable-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Impeccable WNBA",
+          "display_name": "2025-26 Impeccable WNBA Basketball"
+        },
+        {
+          "slug": "2025-26-one-and-one-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "One And One WNBA",
+          "display_name": "2025-26 One And One WNBA Basketball"
+        },
+        {
+          "slug": "2025-26-origins-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Origins Euroleague",
+          "display_name": "2025-26 Origins Euroleague Basketball"
+        },
+        {
+          "slug": "2025-26-prizm-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Prizm",
+          "display_name": "2025-26 Prizm Basketball"
+        },
+        {
+          "slug": "2025-26-prizm-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Prizm WNBA",
+          "display_name": "2025-26 Prizm WNBA Basketball"
+        },
+        {
+          "slug": "2025-26-select-euroleague-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Select Euroleague",
+          "display_name": "2025-26 Select Euroleague Basketball"
+        },
+        {
+          "slug": "2025-26-select-wnba-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Select WNBA",
+          "display_name": "2025-26 Select WNBA Basketball"
+        },
+        {
+          "slug": "2025-26-signature-series-basketball",
+          "sport": "Basketball",
+          "manufacturer": "Panini",
+          "year": 2025,
+          "year_label": "2025-26",
+          "title": "Signature Series",
+          "display_name": "2025-26 Signature Series Basketball"
+        }
+      ]
+    }
+  },
+  "Baseball": {
+    "Topps": {
+      "2026": [
+        {
+          "slug": "2026-bowman-chrome-baseball",
+          "sport": "Baseball",
+          "manufacturer": "Topps",
+          "year": 2026,
+          "year_label": "2026",
+          "title": "Bowman Chrome",
+          "display_name": "2026 Bowman Chrome Baseball"
+        }
+      ]
+    }
+  }
+}

@@ -14,16 +14,15 @@
 <header class="topbar">
   <div class="brand"><span class="brand-mark">&#9711;</span><h1>Card Tracker</h1></div>
   <select id="set-select" aria-label="Choose a set"></select>
-  <button class="btn-gold" id="btn-import">+ Import checklist</button>
+  <button class="btn-gold" id="btn-browse">+ Add a set</button>
 </header>
 
 <main class="main">
   <div id="empty-state" class="empty-state">
-    <h2>Import a set checklist to get started</h2>
-    <p>Pick a set from the dropdown above once you've imported its checklist. A checklist is a CSV with one row per card
-      (card number, player, and optionally team, subset, print run). Manufacturers like Panini publish these as spreadsheets
-      with each release &mdash; save the sheet as CSV and import it here. Use
-      <a href="/static/sample_checklist.csv" download>the sample file</a> to see the format.</p>
+    <h2>Add a set to get started</h2>
+    <p>Click "+ Add a set" and pick Sport &rarr; Manufacturer &rarr; Year &rarr; Set &mdash; most modern Panini football
+      and basketball releases (2019+) load their full checklist automatically, no upload needed. For anything outside
+      that coverage (earlier years, other sports/brands), the same dialog has a manual CSV import.</p>
   </div>
 
   <div id="set-view" hidden>
@@ -31,6 +30,7 @@
       <div>
         <h2 id="set-title">&mdash;</h2>
         <p class="set-sub" id="set-sub">&mdash;</p>
+        <p class="set-attribution" id="set-attribution" hidden></p>
       </div>
       <div class="set-actions">
         <button id="btn-search" class="btn-primary">Search eBay</button>
@@ -85,30 +85,54 @@
   </div>
 </main>
 
-<div class="modal-backdrop" id="modal-backdrop" hidden>
-  <form class="modal" id="import-form">
-    <h3>Import a checklist</h3>
-    <label>Set name
-      <input type="text" id="i-name" placeholder="2018 Panini Prizm Football" required>
-    </label>
-    <div class="field-row">
-      <label>Year <input type="number" id="i-year" placeholder="2018" min="2015" max="2030"></label>
-      <label>Sport <input type="text" id="i-sport" placeholder="Football"></label>
+<div class="modal-backdrop" id="browse-modal-backdrop" hidden>
+  <div class="modal modal-wide">
+    <h3>Add a set</h3>
+    <div class="modal-tabs">
+      <button type="button" class="modal-tab active" data-modal-tab="browse">Browse catalog</button>
+      <button type="button" class="modal-tab" data-modal-tab="manual">Manual CSV import</button>
     </div>
-    <label>eBay search terms (optional)
-      <input type="text" id="i-query" placeholder="Defaults to the set name">
-      <span class="hint">Only change this if the set name doesn't work well as an eBay search.</span>
-    </label>
-    <label>Checklist CSV
-      <input type="file" id="i-file" accept=".csv,text/csv" required>
-      <span class="hint">Needs columns for card number and player. Team, subset and print run are optional.</span>
-    </label>
-    <p class="form-error" id="i-error" hidden></p>
-    <div class="modal-actions">
-      <button type="button" class="btn-ghost" data-close>Cancel</button>
-      <button type="submit" class="btn-primary" id="btn-import-submit">Import</button>
+
+    <div id="modal-pane-browse" class="modal-pane">
+      <p class="hint-line">Checklist data for sets below comes from
+        <a href="https://setlistcards.com" target="_blank" rel="noopener">SetList</a> (CC BY-NC 4.0). Mostly modern
+        Panini football &amp; basketball, 2019 onward. Don't see your set? Use the Manual CSV import tab instead.</p>
+      <div class="cascade">
+        <label>Sport <select id="c-sport"><option value="">Choose&hellip;</option></select></label>
+        <label>Manufacturer <select id="c-manufacturer" disabled><option value="">Choose a sport first</option></select></label>
+        <label>Year <select id="c-year" disabled><option value="">Choose a manufacturer first</option></select></label>
+        <label>Set <select id="c-set" disabled><option value="">Choose a year first</option></select></label>
+      </div>
+      <p class="form-error" id="c-error" hidden></p>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" data-close>Cancel</button>
+        <button type="button" class="btn-primary" id="btn-browse-load" disabled>Load set</button>
+      </div>
     </div>
-  </form>
+
+    <form id="modal-pane-manual" class="modal-pane" hidden>
+      <label>Set name
+        <input type="text" id="i-name" placeholder="2018 Panini Prizm Football" required>
+      </label>
+      <div class="field-row">
+        <label>Year <input type="number" id="i-year" placeholder="2018" min="2015" max="2030"></label>
+        <label>Sport <input type="text" id="i-sport" placeholder="Football"></label>
+      </div>
+      <label>eBay search terms (optional)
+        <input type="text" id="i-query" placeholder="Defaults to the set name">
+        <span class="hint">Only change this if the set name doesn't work well as an eBay search.</span>
+      </label>
+      <label>Checklist CSV
+        <input type="file" id="i-file" accept=".csv,text/csv">
+        <span class="hint">Needs columns for card number and player. Team, subset and print run are optional.</span>
+      </label>
+      <p class="form-error" id="i-error" hidden></p>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" data-close>Cancel</button>
+        <button type="submit" class="btn-primary" id="btn-import-submit">Import</button>
+      </div>
+    </form>
+  </div>
 </div>
 
 <div class="modal-backdrop" id="sold-modal-backdrop" hidden>

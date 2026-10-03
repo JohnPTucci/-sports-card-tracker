@@ -11,10 +11,61 @@ from pydantic import BaseModel
 
 import db
 import ebay_client
+import setlist_catalog
 from matcher import ChecklistMatcher
 
 app = FastAPI(title="Sports Card Tracker")
 db.init_db()
+
+
+# ======================================================================
+# Catalog browsing (Sport -> Manufacturer -> Year -> Set) + auto-import
+# ======================================================================
+
+@app.get("/api/catalog")
+def api_catalog():
+    """The full browsable catalog, sport -> manufacturer -> year -> [set entries]."""
+    return setlist_catalog.load_catalog()
+
+
+@app.post("/api/catalog/{slug}/load")
+async def api_load_catalog_set(slug: str):
+    """Pick a set from the catalog. If its checklist is already cached locally,
+    just return that set. Otherwise fetch it from SetList, store it, and return
+    the newly created set. Idempotent from the frontend's point of view — this
+    is the single call the cascading picker makes on "Select"."""
+    existing = db.find_set_by_slug(slug)
+    if existing:
+        return {"id": existing["id"], "already_loaded": True}
+
+    entry = setlist_catalog.find_entry(slug)
+    if not entry:
+        raise HTTPException(404, f"'{slug}' isn't in the catalog.")
+
+    if db.set_exists(entry["display_name"]):
+        raise HTTPException(
+            400,
+            f'A set named "{entry["display_name"]}" already exists locally (probably '
+            "imported manually before). Remove it first to load the catalog version.",
+        )
+
+    try:
+        rows = await setlist_catalog.fetch_checklist_rows(slug)
+    except setlist_catalog.SetlistFetchError as e:
+        raise HTTPException(502, str(e))
+    if not rows:
+        raise HTTPException(502, f"SetList returned no cards for '{slug}'.")
+
+    set_id = db.create_set(
+        entry["display_name"],
+        entry["year"],
+        entry["sport"],
+        entry["display_name"],
+        catalog_slug=slug,
+        checklist_source="setlist",
+    )
+    db.add_cards(set_id, rows)
+    return {"id": set_id, "already_loaded": False, "cards_imported": len(rows)}
 
 
 # ======================================================================
