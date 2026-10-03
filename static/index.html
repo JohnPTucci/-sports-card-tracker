@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">&#9711;</span><h1>Card Tracker</h1></div>
+  <select id="set-select" aria-label="Choose a set"></select>
+  <button class="btn-gold" id="btn-import">+ Import checklist</button>
+</header>
+
+<main class="main">
+  <div id="empty-state" class="empty-state">
+    <h2>Import a set checklist to get started</h2>
+    <p>Pick a set from the dropdown above once you've imported its checklist. A checklist is a CSV with one row per card
+      (card number, player, and optionally team, subset, print run). Manufacturers like Panini publish these as spreadsheets
+      with each release &mdash; save the sheet as CSV and import it here. Use
+      <a href="/static/sample_checklist.csv" download>the sample file</a> to see the format.</p>
+  </div>
+
+  <div id="set-view" hidden>
+    <header class="set-header">
+      <div>
+        <h2 id="set-title">&mdash;</h2>
+        <p class="set-sub" id="set-sub">&mdash;</p>
+      </div>
+      <div class="set-actions">
+        <button id="btn-search" class="btn-primary">Search eBay</button>
+        <button id="btn-import-sold" class="btn-ghost">+ Import sold comps</button>
+        <button id="btn-delete" class="btn-ghost">Remove set</button>
+      </div>
+    </header>
+
+    <section class="summary-grid" id="summary-grid"></section>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="checklist">Checklist</button>
+      <button class="tab" data-tab="other">Other listings <span id="other-count" class="count-pill"></span></button>
+      <button class="tab" data-tab="history">Price history</button>
+      <span id="fetched-at" class="fetched-at"></span>
+    </div>
+
+    <section id="tab-checklist">
+      <div class="filters">
+        <input type="search" id="f-search" placeholder="Search player, team, card #">
+        <select id="f-status">
+          <option value="all">All cards</option>
+          <option value="listed">On eBay now</option>
+          <option value="sold-data">Has sold comps</option>
+          <option value="unlisted">No data at all</option>
+        </select>
+        <select id="f-subset"><option value="">All subsets</option></select>
+        <label class="check"><input type="checkbox" id="f-hits"> Hits only</label>
+        <span id="filter-count" class="filter-count"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="checklist">
+          <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Subset</th><th>Run</th><th>Asking (eBay)</th><th>Sold avg.</th></tr></thead>
+          <tbody id="checklist-body"></tbody>
+        </table>
+      </div>
+      <button id="btn-more" class="btn-ghost more" hidden>Show more</button>
+    </section>
+
+    <section id="tab-other" hidden>
+      <p class="hint-line">Listings we couldn't pin to a single checklist card: sealed boxes, lots, cards from other sets, or a player
+        with several cards where the title didn't say which.</p>
+      <div class="listings-grid" id="listings-grid"></div>
+    </section>
+
+    <section id="tab-history" hidden>
+      <p class="hint-line">Blue is eBay's current asking price, averaged each time you search. Gold is sold prices you've
+        imported, averaged per day. Sold prices reflect what cards actually went for; asking prices tend to run a bit high.</p>
+      <div class="chart-wrap"><canvas id="history-chart" height="110"></canvas></div>
+      <p id="history-empty" class="empty-listings" hidden>No price history yet &mdash; search eBay and/or import sold comps to start building this chart.</p>
+    </section>
+  </div>
+</main>
+
+<div class="modal-backdrop" id="modal-backdrop" hidden>
+  <form class="modal" id="import-form">
+    <h3>Import a checklist</h3>
+    <label>Set name
+      <input type="text" id="i-name" placeholder="2018 Panini Prizm Football" required>
+    </label>
+    <div class="field-row">
+      <label>Year <input type="number" id="i-year" placeholder="2018" min="2015" max="2030"></label>
+      <label>Sport <input type="text" id="i-sport" placeholder="Football"></label>
+    </div>
+    <label>eBay search terms (optional)
+      <input type="text" id="i-query" placeholder="Defaults to the set name">
+      <span class="hint">Only change this if the set name doesn't work well as an eBay search.</span>
+    </label>
+    <label>Checklist CSV
+      <input type="file" id="i-file" accept=".csv,text/csv" required>
+      <span class="hint">Needs columns for card number and player. Team, subset and print run are optional.</span>
+    </label>
+    <p class="form-error" id="i-error" hidden></p>
+    <div class="modal-actions">
+      <button type="button" class="btn-ghost" data-close>Cancel</button>
+      <button type="submit" class="btn-primary" id="btn-import-submit">Import</button>
+    </div>
+  </form>
+</div>
+
+<div class="modal-backdrop" id="sold-modal-backdrop" hidden>
+  <form class="modal" id="sold-import-form">
+    <h3>Import sold comps</h3>
+    <p class="hint-line">Paste an export from 130point, Terapeak/Seller Hub, or any spreadsheet of sales. Needs a
+      <b>Price</b> column plus either a <b>Player</b> column (best &mdash; add a <b>Card #</b> column too for exact matches)
+      or a free-text <b>Title</b> column. A <b>Date</b> column (any common format) powers the price-history chart.</p>
+    <label>Source (optional)
+      <input type="text" id="s-source" placeholder="130point">
+    </label>
+    <label>Sold comps CSV
+      <input type="file" id="s-file" accept=".csv,text/csv" required>
+    </label>
+    <p class="form-error" id="s-error" hidden></p>
+    <p class="form-success" id="s-success" hidden></p>
+    <div class="modal-actions">
+      <button type="button" class="btn-ghost" data-close>Cancel</button>
+      <button type="submit" class="btn-primary" id="btn-sold-submit">Import</button>
+    </div>
+  </form>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
